@@ -8,13 +8,13 @@ const Header = () => {
         <div className='my-10 flex flex-col justify-center items-center space-y-2'>
             <Image
             src={Logo}
-            width={300}
-            height={200}
+            width={400}
+            height={300}
             alt='Logo'
             className='mx-auto'
             />
-            <p>Journalism Without Fear or Favour</p>
-            <p>{format(new Date(), "EEEE, MMM dd, yyyy")}</p>
+            <p className=''>Journalism Without Fear or Favour</p>
+            <p className='font-medium text-xl'>{format(new Date(), "EEEE, MMM dd, yyyy")}</p>
         </div>
     );
 };
