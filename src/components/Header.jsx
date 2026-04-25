@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import Logo from '@/assets/logo.png'
-import { compareAsc, format } from "date-fns";
+import { format } from "date-fns";
 
 const Header = () => {
     return (
@@ -14,7 +14,7 @@ const Header = () => {
             className='mx-auto'
             />
             <p>Journalism Without Fear or Favour</p>
-            <p>{format(new Date(2014, 1, 11), "yyyy-MM-dd")}</p>
+            <p>{format(new Date(), "EEEE, MMM dd, yyyy")}</p>
         </div>
     );
 };
